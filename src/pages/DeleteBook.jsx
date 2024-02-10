@@ -10,7 +10,7 @@ function DeleteBook() {
   const handleDelete = async () => {
     setDeleting(true);
     try {
-      await axios.delete(`https://book-store-backend-6j7u21wy1-hirendhola.vercel.app/books/${id}`);
+      await axios.delete(`https://book-store-backend-ij85.vercel.app/books/${id}`);
       console.log(`Book with ID ${id} deleted successfully.`);
       navigate("/")
     } catch (error) {

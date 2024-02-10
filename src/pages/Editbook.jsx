@@ -17,7 +17,7 @@ function Editbook() {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://book-store-backend-6j7u21wy1-hirendhola.vercel.app/books/${id}`);
+        const response = await axios.get(`https://book-store-backend-ij85.vercel.app/books/${id}`);
           setFormData(response.data)
           console.log(response.data)
       } catch (error) {
@@ -46,7 +46,7 @@ function Editbook() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`https://book-store-backend-6j7u21wy1-hirendhola.vercel.app/books/${id}`, formData, {
+      const res = await axios.put(`https://book-store-backend-ij85.vercel.app/books/${id}`, formData, {
         headers: {
           'Content-Type': 'application/json',
         }

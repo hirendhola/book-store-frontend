@@ -20,7 +20,7 @@ function Homebook() {
 
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://book-store-backend-6j7u21wy1-hirendhola.vercel.app/books");
+        const response = await axios.get("https://book-store-backend-ij85.vercel.app/books");
         setTimeout(() => {
           setBooks(response.data.data);
           setLoading(false);
